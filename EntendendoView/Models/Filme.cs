@@ -9,7 +9,7 @@ namespace EntendendoView.Models
         public int Id { get; set; }
 
         [Required(ErrorMessage = "O campo Título é obrigatório")]
-        [StringLength(80, MinimumLength = 3, ErrorMessage = "Ó título precisa ter entre 3 ou 60 caracteres")]
+        [StringLength(80, MinimumLength = 3, ErrorMessage = "O título precisa ter entre 3 ou 60 caracteres")]
         public string Titulo { get; set; }
 
         [DataType(DataType.DateTime, ErrorMessage = "Data em formato incorreto")]
