@@ -1,0 +1,19 @@
+﻿@model EntendendoView.Models.Filmes
+
+@{
+    ViewData["Title"] = "Adicionar novo filme";
+
+}
+
+<h1>@ViewData["Title"]</h1>
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Adicionar">
+            <div class="form-group">
+                <label asp-for="Titulo" class="control-label"></label>
+                <input asp-for="Titulo" class="form-control"/>
+            </div>
+        </form>
+    </div>
+
+</div>
